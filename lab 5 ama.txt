@@ -1,0 +1,26 @@
+// ConsoleApplication10.cpp : Defines the entry point for the console application.
+//
+
+#include "stdafx.h"
+#include <iostream>
+#include <string>
+using namespace std;
+
+int x=0, z=0;
+
+int main()
+{
+	cout << "Please enter the value of x:" << endl;
+	cin >> x;
+	cout << "Please enter the value of z:" << endl;
+	cin >> z;
+
+	if (x > 0 && z > 0)
+
+		cout << "The Number is positive" << endl;
+	else
+		cout << "Enter a positive number";
+
+    return 0;
+}
+
