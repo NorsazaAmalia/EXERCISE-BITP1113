@@ -1,0 +1,44 @@
+#include <iostream>
+using namespace std;
+
+void getScore();
+void calcAverage();
+int findLowest();
+int testScore, average, count, total = 0, lowest = 100;
+
+int main()
+{
+    for(count = 0; count < 5; count++)
+        getScore();
+       
+    calcAverage();
+
+}
+
+void getScore()
+{
+    cout << "Please enter your test score" << endl;
+    cin >> testScore;
+   
+    if(testScore < 0 || testScore >100)
+    {
+        cout << "\nPlease enter valid score" << endl;
+        cin >> testScore;
+    }
+    total = total + testScore;
+}
+
+void calcAverage()
+{
+    findLowest();
+    average = ( total - lowest ) / 4;
+    cout << "The average of four higher score is " << average << endl;
+}
+
+int findLowest()
+{
+    if(testScore < lowest)
+    lowest = testScore;
+   
+    return 0;
+}  
