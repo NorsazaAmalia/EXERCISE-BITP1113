@@ -1,0 +1,53 @@
+// Example program
+#include <iostream>
+#include <string>
+
+using namespace std;
+int main()
+{
+    float a,b,r,area,base,height;
+    int ch;
+    cout << "Geometry Calculator";
+    cout << "\n1. Calculate the Area of a Circle : \n";
+    cout << "\n2. Calculate the Area of a Rectangle : \n";
+    cout << "\n3. Calculate the Area of a Triangle : \n";
+    cout << "\n4. Quit  \n";
+    cin >> ch;
+
+switch(ch)
+{
+    case 1:
+    {
+        cout << "Enter the radius of circle :";
+        cin>>r;
+        area = 3.14159*r*r;
+        cout <<" The area of circle is: "<< area;
+        break;
+    }
+
+    case 2:
+    {
+        cout << "Enter the length and width of rectangle :";
+        cin>>a>>b;
+        area = a*b;
+        cout <<" The area of rectangle is: "<< area;
+        break;
+    }
+        
+    case 3:
+    {
+        cout << "Enter the length base and height of triangle :";
+        cin>>base>>height;
+        area = base * height * 0.5;
+        cout <<" The area of triangle is: "<< area;
+        break;
+    }
+
+    default: cout << "\nWrong choice....!!!";
+    break;
+}
+
+return 0;
+
+}
+    
